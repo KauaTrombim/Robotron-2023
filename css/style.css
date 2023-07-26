@@ -9,7 +9,7 @@
 }
 
 body {
-    background: url(../img/fundo.jpg);
+    background: url(../img/sun.jpg);
     background-position: center center;
     background-size: cover cover;
     padding: 0;
@@ -63,6 +63,37 @@ main {
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
     border-left: 5px solid var(--main-cinza);
     height: 80%;
+}
+
+.box-cores {    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: rgba(0,0,0,0.6);
+    /*clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
+    */
+    border-left: 5px solid var(--main-cinza);
+    height: 80%;
+}
+
+#vermelho {
+    background: red;
+}
+
+#preto {
+    background: #1f1d1d;
+}
+
+#azul {
+    background: blue;
+}
+
+#rosa {
+    background: pink;
+}
+
+#branco {
+    background: white;
 }
 
 /****************************** Equipamentos *****/
@@ -134,6 +165,7 @@ main {
 .producao {
     margin-top: 1em;
     font-size: 2em;
+    font-family: 'Teko', sans-serif;
     text-transform: uppercase;
     padding: 0.2em 1em;
     float: right;
@@ -148,6 +180,12 @@ main {
     color: var(--main-branco)
 }
 
+.seletores-de-cor {
+    background: #FFFFFF;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+}
 
 
 /****************************** Estatísticas *****/
